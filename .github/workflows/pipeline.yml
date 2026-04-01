@@ -23,7 +23,7 @@ jobs:
 
       - name: Push image
         run: |
-          docker tag mi-app ${{ secrets.DOCKER_USER }}/app-one:latest
+          docker tag test-one ${{ secrets.DOCKER_USER }}/app-one:latest
           docker push ${{ secrets.DOCKER_USER }}/app-one:latest
 
 
